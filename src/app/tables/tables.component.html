@@ -1,0 +1,23 @@
+<div class="container mt-3">
+    <h2 style="text-align: center;">Employee Details</h2>
+    <input type="text" placeholder="Search Here !" class="form-control" [(ngModel)]="searchText">   
+    <table class="table table-hover table-striped">
+      <thead>
+        <tr>
+          <th>Employee ID</th>
+          <th>Employee Name</th>
+          <th>Employee Salary</th>
+          <th>Employee Designation</th>
+        </tr>
+      </thead>
+      <tbody *ngIf="employeeList.length>0">
+        <tr *ngFor="let employee of employeeList | search :searchText">
+          <td>{{employee.empId}}</td>
+          <td>{{employee.empName}}</td>
+          <td>{{employee.empSal}}</td>
+          <td>{{employee.empDesig}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

@@ -1,0 +1,27 @@
+<!-- <div class="card cardFlex" style="width:400px"> -->
+    <!-- COMMENT THIS <img class="card-img-top" style="height: 35px; width : 25px; align-self: center" src="../assets/images/images.jfif"> -->
+
+    <!-- <div class="card-body" *ngFor="let product of products">
+      <img [src]='product.prodImage'/>
+      <h4 class="card-title">{{product.prodId}}</h4>
+      <h4 class="card-title">{{product.prodTitle}}</h4>
+      <p class="card-text">{{product.prodPrice}}</p>
+    </div>
+  </div> -->
+
+  <div class="align-searchandsort">
+    <input type="text" placeholder="Search Here !" class="form-control" [(ngModel)]="searchText">   
+    <button (click)="sortID()" class="btn btn-success">Sort by ID</button>
+    <button (click)="sortPrice()" class="btn btn-success">Sort by Price</button>
+    <button (click)="sortName('prodTitle')" class="btn btn-success">Sort by Name</button>
+  </div>
+  <div class="card-group">
+    <div class="card cardFlex">
+      <div class="card-body" *ngFor="let product of productsData | search : searchText" >
+        <img class="img_" [src]='product.prodImage'/>
+        <h4 class="card-title">ID : {{product.prodId}}</h4>
+        <h4 class="card-title">{{product.prodTitle}}</h4>
+        <h5 class="card-text">Price : {{product.prodPrice}}</h5>  
+      </div>
+    </div>
+ </div>   

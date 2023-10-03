@@ -1,0 +1,8 @@
+[
+    {"prodId":501,"prodTitle":"Headset","prodPrice":1200,"prodImage": "../assets/images/1.jfif"},   
+    {"prodId":502,"prodTitle":"PowerBank","prodPrice":1000,"prodImage": "../assets/images/2.jfif"},
+    {"prodId":503,"prodTitle":"USB","prodPrice":250,"prodImage": "../assets/images/3.jfif"},
+    {"prodId":504,"prodTitle":"Cable","prodPrice":150,"prodImage": "../assets/images/4.jpg"},
+    {"prodId":505,"prodTitle":"Pendrive","prodPrice":600,"prodImage": "../assets/images/5.jfif"},
+    {"prodId":506,"prodTitle":"UPS","prodPrice":800,"prodImage": "../assets/images/6.jfif"}
+ ]
